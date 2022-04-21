@@ -1,0 +1,62 @@
+/* Tous les elements*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-size: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.nav-link {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;    
+  }
+
+#menu {
+    border: 0;
+    background-color: transparent;    
+}
+
+nav {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
+
+/* Media Query / Breakpoints */
+@media (min-width: 1160px) {
+    #menu {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    ul {
+        display: flex;        
+    }
+    li{
+        padding: 5px;
+    }
+
+}
+
